@@ -22,37 +22,43 @@ CONDA_CLOUD_BASE_URL = os.getenv("CONDA_COULD_URL", "https://conda.anaconda.org"
 
 WORKING_DIR = os.getenv("TUNASYNC_WORKING_DIR")
 
-CONDA_REPOS = ("main", "free", "r", "mro", "pro", "msys2")
+CONDA_REPOS = ("main", "free" )
+# CONDA_REPOS = ("main", "free", "r", "mro", "pro", "msys2")
 CONDA_ARCHES = (
-    "noarch", "linux-64", "linux-32", "linux-armv6l", "linux-armv7l",
-    "linux-ppc64le", "osx-64", "osx-32", "win-64", "win-32"
+     "linux-64", 
+     "win-64",
+     "osx-64",
+    # "noarch", 
+    #  "linux-32", "linux-armv6l", "linux-armv7l", "linux-ppc64le", 
+    #  "osx-32", "win-32"
 )
 
 CONDA_CLOUD_REPOS = (
-    "conda-forge/linux-64", "conda-forge/osx-64", "conda-forge/win-64", "conda-forge/noarch",
-    "msys2/linux-64", "msys2/win-64", "msys2/noarch",
-    "bioconda/linux-64", "bioconda/osx-64", "bioconda/win-64", "bioconda/noarch",
-    "menpo/linux-64", "menpo/osx-64", "menpo/win-64", "menpo/win-32", "menpo/noarch",
-    "pytorch/linux-64", "pytorch/osx-64", "pytorch/win-64", "pytorch/win-32", "pytorch/noarch",
-    "stackless/linux-64", "stackless/win-64", "stackless/win-32", "stackless/linux-32", "stackless/osx-64", "stackless/noarch",
-    "fermi/linux-64", "fermi/osx-64", "fermi/win-64", "fermi/noarch",
-    "fastai/linux-64", "fastai/osx-64", "fastai/win-64", "fastai/noarch",
-    "omnia/linux-64", "omnia/osx-64", "omnia/win-64", "omnia/noarch",
-    "simpleitk/linux-64", "simpleitk/linux-32", "simpleitk/osx-64", "simpleitk/win-64", "simpleitk/win-32", "simpleitk/noarch",
-    "caffe2/linux-64", "caffe2/osx-64", "caffe2/win-64", "caffe2/noarch",
-    "plotly/linux-64", "plotly/linux-32", "plotly/osx-64", "plotly/win-64", "plotly/win-32", "plotly/noarch",
-    "intel/linux-64", "intel/linux-32", "intel/osx-64", "intel/win-64", "intel/win-32", "intel/noarch",
-    "auto/linux-64", "auto/linux-32", "auto/osx-64", "auto/win-64", "auto/win-32", "auto/noarch",
-    "ursky/linux-64", "ursky/osx-64", "ursky/noarch",
-    "matsci/linux-64", "matsci/osx-64", "matsci/win-64", "matsci/noarch",
-    "psi4/linux-64", "psi4/osx-64", "psi4/win-64", "psi4/noarch",
-    "Paddle/linux-64", "Paddle/linux-32", "Paddle/osx-64", "Paddle/win-64", "Paddle/win-32", "Paddle/noarch",
-    "deepmodeling/linux-64", "deepmodeling/noarch",
-    "numba/linux-64", "numba/linux-32", "numba/osx-64", "numba/win-64", "numba/win-32", "numba/noarch",
-    "numba/label/dev/win-64", "numba/label/dev/noarch",
-    "pyviz/linux-64", "pyviz/linux-32", "pyviz/win-64", "pyviz/win-32", "pyviz/osx-64", "pyviz/noarch",
-    "dglteam/linux-64", "dglteam/win-64", "dglteam/osx-64", "dglteam/noarch",
-    "rdkit/linux-64", "rdkit/win-64", "rdkit/osx-64", "rdkit/noarch",
+    #"conda-forge/linux-64", "conda-forge/osx-64", "conda-forge/win-64", "conda-forge/noarch",
+    # "msys2/linux-64", "msys2/win-64", "msys2/noarch",
+    # "bioconda/linux-64", "bioconda/osx-64", "bioconda/win-64", "bioconda/noarch",
+    # "menpo/linux-64", "menpo/osx-64", "menpo/win-64", "menpo/win-32", "menpo/noarch",
+     "pytorch/linux-64", "pytorch/osx-64", "pytorch/win-64", 
+    # "pytorch/win-32", "pytorch/noarch",
+    # "stackless/linux-64", "stackless/win-64", "stackless/win-32", "stackless/linux-32", "stackless/osx-64", "stackless/noarch",
+    # "fermi/linux-64", "fermi/osx-64", "fermi/win-64", "fermi/noarch",
+    # "fastai/linux-64", "fastai/osx-64", "fastai/win-64", "fastai/noarch",
+    # "omnia/linux-64", "omnia/osx-64", "omnia/win-64", "omnia/noarch",
+    # "simpleitk/linux-64", "simpleitk/linux-32", "simpleitk/osx-64", "simpleitk/win-64", "simpleitk/win-32", "simpleitk/noarch",
+    # "caffe2/linux-64", "caffe2/osx-64", "caffe2/win-64", "caffe2/noarch",
+    # "plotly/linux-64", "plotly/linux-32", "plotly/osx-64", "plotly/win-64", "plotly/win-32", "plotly/noarch",
+    # "intel/linux-64", "intel/linux-32", "intel/osx-64", "intel/win-64", "intel/win-32", "intel/noarch",
+    # "auto/linux-64", "auto/linux-32", "auto/osx-64", "auto/win-64", "auto/win-32", "auto/noarch",
+    # "ursky/linux-64", "ursky/osx-64", "ursky/noarch",
+    # "matsci/linux-64", "matsci/osx-64", "matsci/win-64", "matsci/noarch",
+    # "psi4/linux-64", "psi4/osx-64", "psi4/win-64", "psi4/noarch",
+    # "Paddle/linux-64", "Paddle/linux-32", "Paddle/osx-64", "Paddle/win-64", "Paddle/win-32", "Paddle/noarch",
+    # "deepmodeling/linux-64", "deepmodeling/noarch",
+    # "numba/linux-64", "numba/linux-32", "numba/osx-64", "numba/win-64", "numba/win-32", "numba/noarch",
+    # "numba/label/dev/win-64", "numba/label/dev/noarch",
+    # "pyviz/linux-64", "pyviz/linux-32", "pyviz/win-64", "pyviz/win-32", "pyviz/osx-64", "pyviz/noarch",
+    # "dglteam/linux-64", "dglteam/win-64", "dglteam/osx-64", "dglteam/noarch",
+    # "rdkit/linux-64", "rdkit/win-64", "rdkit/osx-64", "rdkit/noarch",
 )
 
 EXCLUDED_PACKAGES = (
