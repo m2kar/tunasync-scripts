@@ -28,13 +28,13 @@ CONDA_ARCHES = (
      "linux-64", 
      "win-64",
      "osx-64",
-    # "noarch", 
+     "noarch", 
     #  "linux-32", "linux-armv6l", "linux-armv7l", "linux-ppc64le", 
     #  "osx-32", "win-32"
 )
 
 CONDA_CLOUD_REPOS = (
-    #"conda-forge/linux-64", "conda-forge/osx-64", "conda-forge/win-64", "conda-forge/noarch",
+    "conda-forge/linux-64", "conda-forge/osx-64", "conda-forge/win-64", "conda-forge/noarch",
     # "msys2/linux-64", "msys2/win-64", "msys2/noarch",
     # "bioconda/linux-64", "bioconda/osx-64", "bioconda/win-64", "bioconda/noarch",
     # "menpo/linux-64", "menpo/osx-64", "menpo/win-64", "menpo/win-32", "menpo/noarch",
@@ -45,7 +45,7 @@ CONDA_CLOUD_REPOS = (
     # "fastai/linux-64", "fastai/osx-64", "fastai/win-64", "fastai/noarch",
     # "omnia/linux-64", "omnia/osx-64", "omnia/win-64", "omnia/noarch",
     # "simpleitk/linux-64", "simpleitk/linux-32", "simpleitk/osx-64", "simpleitk/win-64", "simpleitk/win-32", "simpleitk/noarch",
-    # "caffe2/linux-64", "caffe2/osx-64", "caffe2/win-64", "caffe2/noarch",
+     "caffe2/linux-64", "caffe2/osx-64", "caffe2/win-64", "caffe2/noarch",
     # "plotly/linux-64", "plotly/linux-32", "plotly/osx-64", "plotly/win-64", "plotly/win-32", "plotly/noarch",
     # "intel/linux-64", "intel/linux-32", "intel/osx-64", "intel/win-64", "intel/win-32", "intel/noarch",
     # "auto/linux-64", "auto/linux-32", "auto/osx-64", "auto/win-64", "auto/win-32", "auto/noarch",
@@ -54,7 +54,8 @@ CONDA_CLOUD_REPOS = (
     # "psi4/linux-64", "psi4/osx-64", "psi4/win-64", "psi4/noarch",
     # "Paddle/linux-64", "Paddle/linux-32", "Paddle/osx-64", "Paddle/win-64", "Paddle/win-32", "Paddle/noarch",
     # "deepmodeling/linux-64", "deepmodeling/noarch",
-    # "numba/linux-64", "numba/linux-32", "numba/osx-64", "numba/win-64", "numba/win-32", "numba/noarch",
+     "numba/linux-64","numba/osx-64", "numba/win-64","numba/noarch",
+    # "numba/linux-32",  "numba/win-32", 
     # "numba/label/dev/win-64", "numba/label/dev/noarch",
     # "pyviz/linux-64", "pyviz/linux-32", "pyviz/win-64", "pyviz/win-32", "pyviz/osx-64", "pyviz/noarch",
     # "dglteam/linux-64", "dglteam/win-64", "dglteam/osx-64", "dglteam/noarch",
